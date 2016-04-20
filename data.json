@@ -1,0 +1,34 @@
+[
+  {
+    "pk": 1,
+    "model": "auth.user",
+    "fields": {
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": true,
+      "is_staff": true,
+      "last_login": "2016-04-20T13:55:52.745Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$kW8F6x0BsrOC$ltHzL05/pwJAZmrjIahyRbLNjnMMaAweiPuWFtgEI5o=",
+      "email": "stasfilinmusic@gmail.com",
+      "date_joined": "2016-04-20T08:53:59.029Z"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "hello.persons",
+    "fields": {
+      "bio": "Chernivtsi City",
+      "first_name": "Stanislav",
+      "last_name": "Filin",
+      "other": "Telegram: stas_filin",
+      "skype": "stas_filin",
+      "date": "1994-04-20",
+      "jabber": "stasfilin@qutim.org",
+      "email": "stasfilinmusic@gmail.com"
+    }
+  }
+]
