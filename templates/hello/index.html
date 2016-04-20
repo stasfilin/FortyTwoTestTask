@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Ticket #1{% endblock %}
+{% block content %}
+    {% if person %}
+        <div class="col">
+            <p>
+                <div class="row">Name:</div>{{person.first_name}}
+            </p>
+            <p>
+                <div class="row">Last name:</div>{{person.last_name}}
+            </p>
+            <p>
+                <div class="row">Date of birth:</div>{{person.date}}
+            </p>
+            <p>
+                <div class="row2">Bio:</div>{{person.bio}}
+            </p>
+        </div>
+        <div class="col">
+            <p>
+                <div class="row">Email:</div>{{person.email}}
+            </p>
+                <div class="row">Jabber:</div>{{person.jabber}}
+            </p>
+                <div class="row">Skype:</div>{{person.skype}}
+            </p>
+                <div class="row2">Other contacts:</div>{{person.other}}
+            </p>
+        </div>
+    {% endif %}
+{% endblock %}

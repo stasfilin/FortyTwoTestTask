@@ -1,9 +1,10 @@
-from django.test import TestCase
+from django.test.testcases import TestCase
+from django.core.urlresolvers import reverse
 
-# Create your tests here.
 
+class IndexTest(TestCase):
 
-class SomeTests(TestCase):
-    def test_math(self):
-        "put docstrings in your tests"
-        assert(2 + 2 == 5)
+    def test_index_page(self):
+        response = self.client.get(reverse('index'))
+        self.assertEqual(response.status_code, 200)
+

@@ -1,1 +1,13 @@
- 
+.col{
+    display: inline;
+    float: left;
+    margin-right: 20px;
+}
+.row2{
+    display: block;
+}
+.row{
+    display: inline-block;
+    min-width: 150px;
+    text-align: left;
+}
